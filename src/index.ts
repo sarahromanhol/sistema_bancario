@@ -40,6 +40,21 @@ app.post("/users/create", (req: Request, res: Response) => {
     }
 })
 
+app.get("/users/all", (req: Request, res: Response) => {
+    try {
+        
+        if (!accounts.length){
+            res.statusCode = 404
+            throw new Error("Nenhuma conta encontrada")
+        }
+
+        res.status(200).send(accounts)
+
+    } catch (error: any) {
+        res.send(error.message)
+    }
+})
+
 
 app.listen(3003, () => {
     console.log("Servidor rodando na porta 3003")
