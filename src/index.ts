@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 
-app.post("users/create", (req: Request, res: Response) => {
+app.post("/users/create", (req: Request, res: Response) => {
     try {
         // validar as entrtadas da req
         //consultar ou alterar a base de dados
@@ -31,8 +31,12 @@ app.post("users/create", (req: Request, res: Response) => {
 
         // validar os resultados da consulta
         // enviar a resposta
-    } catch (error) {
 
+        res.status(201).send("Conta criada com sucesso!")
+
+    } catch (error: any) {
+        console.log(error)
+        res.status(400).send(error.message)
     }
 })
 
