@@ -24,8 +24,8 @@ Primeiro projetinho em back end criado com a finalidade de treinar os conhecimen
 
 # 👩‍💻 Desenvolvedora
 
-![Sarah](https://user-images.githubusercontent.com/86701927/139923533-9d3064bf-071e-4651-840f-4434d2b24a7b.jpg)
-:------: | :------: | :------: | :------: | :------:
+![Sarah](https://user-images.githubusercontent.com/86701927/139923533-9d3064bf-071e-4651-840f-4434d2b24a7b.jpg =100x20)
+
 [Sarah Romanhol Falconiere](https://www.linkedin.com/in/sarahromanhol)
 
 👋🏽 Entre em contato!
